@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Noto+Sans+JP:wght@700&family=Pacifico&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.menukiri{
+    float: left;
+    display: block;
+    width: 25%;
+    padding:20px 20px 20px 50px;
+    background-color: slateblue;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: acme,sans-serif;
+    margin-right: 50px;
+    height: 200vh;
+}
+.menukiri a{
+    text-decoration: none;
+    color: aquamarine;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    line-height: 2.5rem;
+    margin-top: 50px;
+    
+}
+.menukiri a:hover{
+    background-color: cyan;
+    color: black;
+
+}
+#skill{
+    font-family:pacifico,sans-serif ;
+    line-height: 30px;
+    color: bisque;
+
+}
+#about{
+    background-color: #BC8CF2;
+    font-family: acme,sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-indent:2em;
+    justify-content: center;
+    height: 200vh;
+
+}
+
