@@ -9,7 +9,7 @@
 <body>
     <?php 
     $mkelas=8;
-    $jSiswa="";
+    $jSiswa=" ";
     if($jSiswa==$mkelas){
         echo "silahkan masuk kelas dan belajar";
     }else if($jSiswa!==$mkelas){
