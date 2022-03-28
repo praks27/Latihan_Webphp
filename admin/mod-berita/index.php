@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-    <style>
-        table, th, td{
-        border: 1px solid black;
-        padding: 5px;
-        text-align: center;
-        }
-    </style>
 
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../home.php">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../index.php">admin</a>
+        </li>
+      </form>
+    </div>
+  </div>
+</nav>
 <section>
 <!-- Button trigger modal -->
-<div class="d-flex justify-content-center">
+<div class="">
 <button type="button" class="btn btn-primary my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
   tambahkan konten
 </button>
@@ -60,14 +71,17 @@
 </div>
 </div>
     <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
-            <table cellspacing="2px" >
-                <tr>
-                    <th>ID</th>
-                    <th>Judul</th>
-                    <th>Konten</th>
-                    <th>Action</th>
-                </tr>
+        <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">judul</th>
+                        <th scope="col">nama konten</th>
+                        <th scope="col">action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
             <?php
             // tulis array disini
             $table=array(
@@ -78,19 +92,20 @@
         // looping
             foreach($table as $t):
                 ?>
-                    <tr>
+                        <tr>
                         <td><?php echo $t["id"];?></td>
                         <td><?php echo $t["judul"];?></td>
                         <td><?php echo $t["konten"];?></td>
                         <td><a href="#">edit ,Hapus</a></td>
-                    </tr>
-                <?php
+                        </tr>
+                        <?php
                     endforeach;
                 ?>
-            </table>
-         </div>
-        </div>
-    </section>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     <script src="../../bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 </body>
 </html>
