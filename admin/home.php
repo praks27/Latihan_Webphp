@@ -11,7 +11,7 @@
 
 <!-- header -->
 <header class="bg-secondary text-center">
-    <h1>hello world!!</h1>
+    <h1>Tugas WebProgramming</h1>
 </header>
 
 <!-- left-menu -->
