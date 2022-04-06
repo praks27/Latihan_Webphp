@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../bootstrap/style.css" />
   </head>
-  <body id="loginpage" onload="welcome()">
+  <body id="loginpage">
     <div class="container d-flex justify-content-center mt-5 pt-5">
-      <form class="bg-success text-white p-5">
+      <form class="bg-info text-dark p-5" method="POST" action="ceklogin.php">
         <div class="alert alert-danger" role="alert" id="alert" style="display: none"></div>
         <div class="alert alert-success" role="alert" id="alertok" style="display: none"></div>
         <div id="judul" class="mt-3">Login Admin</div>
@@ -21,13 +21,13 @@
         </div>
         <div class="mb-4">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" />
+          <input type="password" class="form-control" id="password" name="password"/>
         </div>
-        <button type="button" class="btn btn-primary" onclick="ceklogin()">Login</button>
+        <button type="submit" class="btn btn-primary" >Login</button>
         <a href="../">Kembali</a>
       </form>
     </div>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="javascript/main.js" type="text/javascript"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
