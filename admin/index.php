@@ -1,3 +1,7 @@
+<?php
+require_once("../config/konesi_db.php");
+require_once("../config/config.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,7 +27,7 @@
           <label for="password" class="form-label">Password</label>
           <input type="password" class="form-control" id="password" name="password"/>
         </div>
-        <button type="submit" class="btn btn-primary" >Login</button>
+        <button type="submit" class="btn btn-primary" name="btnlogin" >Login</button>
         <a href="../">Kembali</a>
       </form>
     </div>

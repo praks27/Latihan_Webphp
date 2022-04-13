@@ -38,8 +38,11 @@
 <!-- left-menu -->
 <section id="leftMenu">
     <div class="row">
-        <div class="col-md-6">
-        <?php 
+        <div class="col-md-4">
+        <?php
+            include_once("menu.php");
+        ?>
+        <!-- <?php 
         $menu=array(
         array("id"=>"01","nm_menu"=>"dashboard","link"=>"#"),
         array("id"=>"02","nm_menu"=>"Blog","link"=>"#"),
@@ -52,9 +55,15 @@
         </a>
         <?php 
         endforeach;
-        ?>    
+        ?>     -->
     </div>
-        <div class="col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis nesciunt quas perspiciatis, placeat ut aspernatur asperiores magnam tempora laborum nisi, sunt quam repellat recusandae hic labore sequi amet? Minima in ullam vel, natus odio magnam ab illum eaque id adipisci quia dolores ducimus incidunt numquam tempora est, autem aspernatur.</div>
+        <div class="col-md-8">
+          <?php 
+          if(isset($_GET['modul'])){
+            include "".$_GET['modul']."/index.php";
+          }
+          ?>
+        </div>
     </div>
 </section>
 </body>
