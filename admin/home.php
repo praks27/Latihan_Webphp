@@ -1,3 +1,7 @@
+<?php
+  require_once("../config/config.php");
+  require_once("../config/konesi_db.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 <style>
     a{
         text-decoration: none;
@@ -31,14 +36,14 @@
   </div>
 </nav>
 <!-- header -->
-<header class="bg-secondary text-center">
+<!-- <header class="bg-secondary text-center">
     <h1>Tugas WebProgramming</h1>
-</header>
+</header> -->
 
 <!-- left-menu -->
 <section id="leftMenu">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
         <?php
             include_once("menu.php");
         ?>
@@ -57,7 +62,7 @@
         endforeach;
         ?>     -->
     </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
           <?php 
           if(isset($_GET['modul'])){
             include "".$_GET['modul']."/index.php";
