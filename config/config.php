@@ -7,6 +7,3 @@ define("URL",$seturl);
 
 ?>
 
-<?php
-echo $seturl;
-?>
